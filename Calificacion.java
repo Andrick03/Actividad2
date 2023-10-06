@@ -8,29 +8,29 @@ public class Calificacion {
         calificaciones[4]= 100;
 
         String nombre = "Andrick Moreno Jasso";
+        System.out.println("Nombre del estudiante: " + nombre);
+        System.out.println("\n" + "Calificaciones: " + "\n" + "Calificacion 1 :" + calificaciones[0] + "\n" + "Calificacion 2 :" + calificaciones[1] + "\n" + "Calificacion 3 :" + calificaciones[2] + "\n" + "Calificacion 4 :" + calificaciones[3] + "\n" + "Calificacion 5 :" + calificaciones[4] + "\n");
 
         int sum = 0;
 
         for (int counter = 0; counter <calificaciones.length; counter++) {
             sum+= calificaciones[counter];
         }
+
+        System.out.println("Promedio: " + sum/5);
         if ( sum/5>= 91 && sum/5<= 100) {
-            System.out.println("La calificacion de este estudiante es A");
+            System.out.println("Calificacion: A");
         } else if (sum/5>= 81 && sum/5<= 90) {
-            System.out.println("La calificacion de este estudiante es B");
+            System.out.println("Calificacion: B");
         }else if (sum/5>= 71 && sum/5<= 80) {
-            System.out.println("La calificacion de este estudiante es C");
+            System.out.println("Calificacion: C");
         } else if (sum/5>= 61 && sum/5<= 70) {
-            System.out.println("La calificacion de este estudiante es D");
+            System.out.println("Calificacion: D");
         }else if (sum/5>= 51 && sum/5<= 60) {
-            System.out.println("La calificacion de este estudiante es E");
+            System.out.println("Calificacion: E");
         }else {
-            System.out.println("La calificacion de este estudiante es F");
+            System.out.println("Calificacion: F");
         }
-
-
-        System.out.println("El nombre del estudiante es " +nombre);
-        System.out.println("El promedio de este estudiante es " + sum/5);
     }
 
 }
